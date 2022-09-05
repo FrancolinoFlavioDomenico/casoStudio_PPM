@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/scenaCrediti.unity
     guid: 97d9bb7d012c6434b98f25418f202674
+  - enabled: 1
+    path: Assets/Scenes/scenaLivelli.unity
+    guid: e48a913a7a630204d8de1ad178ce2674
+  - enabled: 1
+    path: Assets/Scenes/livello1.unity
+    guid: 3f2b17c20f1b07f47a0e9d95084d5d87
+  - enabled: 1
+    path: Assets/Scenes/livello2.unity
+    guid: 039c226fc35a2944983ca5a951338696
+  - enabled: 1
+    path: Assets/Scenes/livello3.unity
+    guid: 69ee327d6bc304e47b00be4d706cd595
   m_configObjects: {}
