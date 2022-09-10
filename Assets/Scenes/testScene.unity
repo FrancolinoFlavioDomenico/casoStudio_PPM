@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 575177169}
   m_Layer: 0
   m_Name: melanzana
-  m_TagString: Untagged
+  m_TagString: goodFood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1951,7 +1951,7 @@ GameObject:
   - component: {fileID: 2121023807}
   m_Layer: 0
   m_Name: Background
-  m_TagString: goodFood
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

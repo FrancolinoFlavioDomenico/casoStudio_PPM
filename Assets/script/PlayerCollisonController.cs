@@ -13,7 +13,7 @@ public class PlayerCollisonController : MonoBehaviour
             Debug.Log("you aet a bad food");
         }
         
-        if(other.gameObject.tag == "badFood"){
+        if(other.gameObject.tag == "goodFood"){
 
             Debug.Log("you aet a good food");
         }
