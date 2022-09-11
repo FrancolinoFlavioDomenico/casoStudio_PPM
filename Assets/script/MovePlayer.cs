@@ -14,7 +14,8 @@ public class MovePlayer : MonoBehaviour
     [SerializeField]//per poter cambiare moveSpeed da unity ispector
     float moveSpeed = 3f;
 
-//variabili utili per gestire il salto del player
+    //variabili utili per gestire il salto del player
+    bool playerCanJump = true;
     bool isJumping = false;
     [SerializeField]//per poter cambiare jumpForce da unity ispector
     float jumpForce = 100000f;
@@ -32,7 +33,9 @@ public class MovePlayer : MonoBehaviour
         playerJump();
     }
 
-
+    /**
+    * funzione per gestire il movimento di base del player
+    **/
     void movePlayer(){
 
         float h = Input.GetAxis("Horizontal");
@@ -51,23 +54,45 @@ public class MovePlayer : MonoBehaviour
         animation.SetFloat("isMoving", Mathf.Abs(h));//faccio partire l'animazine della camminata
     }
 
+    /**
+    * funzione per gestire il salto del player del player
+    **/
     void playerJump(){
 
-        if(isJumping){//se il player non sta gia effetuando un salto
+        if(playerCanJump){//il player puo saltare
+
+            if(isJumping){//se il player non sta gia effetuando un salto
         
-            if(player.velocity.y == 0){//il player è fermo sul terreno
+                if(player.velocity.y == 0){//il player è fermo sul terreno
 
-                 isJumping = false;
-                 animation.SetBool("isJumping", false);//fermo l'animazione del salto
-            }
-        } else{
+                    isJumping = false;
+                    animation.SetBool("isJumping", false);//fermo l'animazione del salto
+                }
 
-            if(Input.GetAxis("Jump") > 0){
+            } else{
 
-                player.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);//faccio saltare il player
-                isJumping = true;
-                animation.SetBool("isJumping", true);//faccio partire l'animazione del salto
+               if(Input.GetAxis("Jump") > 0){
+
+                    player.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);//faccio saltare il player
+                    isJumping = true;
+                    animation.SetBool("isJumping", true);//faccio partire l'animazione del salto
+                }
             }
         }
+    }
+
+
+    /**
+    * funzione che individua frame per frame qualunque collisone venga effettuata e e lo segnala all'engine
+    **/
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "ostacoli non bypassabili")//il player ha toccato il bordo del livello
+            playerCanJump = false;
+            
+       
+       if(other.gameObject.tag != "ostacoli non bypassabili")//il player è potenzialmente sul terreno di gioco
+            playerCanJump = true;
+
     }
 }

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - goodFood
   - badFood
+  - borderMap
+  - ground
+  - ostacoli non bypassabili
   layers:
   - Default
   - TransparentFX

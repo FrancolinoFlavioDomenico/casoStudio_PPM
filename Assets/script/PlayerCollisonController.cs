@@ -5,6 +5,9 @@ using UnityEngine;
 public class PlayerCollisonController : MonoBehaviour
 {
 
+    /**
+    * funzione che individua una singola collisione fra due gameobject con du collider
+    **/
     void OnCollisionEnter2D(Collision2D other)
     {
 
