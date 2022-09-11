@@ -9,6 +9,7 @@ TagManager:
   - borderMap
   - ground
   - ostacoli non bypassabili
+  - lastPieceOfGround
   layers:
   - Default
   - TransparentFX
