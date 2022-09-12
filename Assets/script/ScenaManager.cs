@@ -22,4 +22,9 @@ public class ScenaManager : MonoBehaviour
         Application.Quit();
     }
 
+    public void Menu(){
+        SceneManager.LoadScene("scenaLivelli");
+    }
+
+
 }
