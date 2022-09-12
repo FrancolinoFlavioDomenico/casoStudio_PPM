@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerCollisonController : MonoBehaviour
 {
 
+    public int eatedFood = 0;
+
     /**
     * funzione che individua una singola collisione fra due gameobject con du collider
     **/
@@ -19,6 +21,11 @@ public class PlayerCollisonController : MonoBehaviour
         if(other.gameObject.tag == "goodFood"){
 
             Debug.Log("you aet a good food");
+        }
+
+        if(other.gameObject.tag == "cibo"){
+
+            eatedFood++;
         }
     }
 }
