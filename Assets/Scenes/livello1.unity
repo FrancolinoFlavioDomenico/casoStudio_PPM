@@ -1164,7 +1164,7 @@ GameObject:
   - component: {fileID: 225897251}
   m_Layer: 0
   m_Name: finish-line
-  m_TagString: ostacoli non bypassabili
+  m_TagString: traguardo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2858,7 +2858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2456b24f9ca454408d4511fec48b23c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  edit: 1
+  edit: 0
   _symmetricalXMode: 0
   _symmetricalYMode: 0
   _xAnchorMin: 0.938
@@ -4087,7 +4087,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca7866c82e48a8e46aebe7db46059c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EatedFood: 0
+  eatedFood: 0
+  foodToEat: 0
 --- !u!1 &665982586
 GameObject:
   m_ObjectHideFlags: 0
@@ -8494,7 +8495,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca7866c82e48a8e46aebe7db46059c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EatedFood: 0
+  eatedFood: 0
+  foodToEat: 0
 --- !u!58 &1333675200
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8545,6 +8547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   jumpForce: 1.4
+  FallingThreshold: -8
 --- !u!50 &1333675203
 Rigidbody2D:
   serializedVersion: 4

@@ -4895,7 +4895,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797381661}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.7, y: -1.7, z: 0}
+  m_LocalPosition: {x: 65.1, y: -0.3, z: 0}
   m_LocalScale: {x: 1.1501273, y: 1.1113354, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7462,7 +7462,7 @@ GameObject:
   - component: {fileID: 1226023298}
   m_Layer: 0
   m_Name: finish-line
-  m_TagString: ostacoli non bypassabili
+  m_TagString: traguardo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
