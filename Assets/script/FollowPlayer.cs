@@ -14,6 +14,8 @@ public class FollowPlayer : MonoBehaviour
     float zOffeset = -10f;  
      [SerializeField]  
     float yOffeset = 1f;
+     [SerializeField]  
+    float xOffeset = 0f;
 
     [SerializeField]
     float smooth = -10f;//"velocita" con cui la camera deve seguire il player
@@ -28,7 +30,7 @@ public class FollowPlayer : MonoBehaviour
     void Update()
     {
         //setto la posizione di default della main camera in modo tale da inquadrare il giocatore
-        Vector3 targetPosition = new Vector3(player.position.x , player.position.y + yOffeset, player.position.z + zOffeset);
+        Vector3 targetPosition = new Vector3(player.position.x + xOffeset, player.position.y + yOffeset, player.position.z + zOffeset);
 
         //quindi posizione la main camere sul player
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smooth);

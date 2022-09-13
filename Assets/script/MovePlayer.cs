@@ -31,6 +31,10 @@ public class MovePlayer : MonoBehaviour
     {
         movePlayer();
         playerJump();
+        
+        if(player.position.y == -10){
+            gameOver();
+        }
     }
 
     /**
@@ -94,5 +98,9 @@ public class MovePlayer : MonoBehaviour
        if(other.gameObject.tag != "ostacoli non bypassabili")//il player è potenzialmente sul terreno di gioco
             playerCanJump = true;
 
+    }
+
+    void gameOver(){
+        //code for game over...
     }
 }

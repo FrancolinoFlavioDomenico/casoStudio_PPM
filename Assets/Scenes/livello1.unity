@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 7114773}
   - component: {fileID: 7114772}
   m_Layer: 0
-  m_Name: Tile_3
+  m_Name: lastPieceOfGround
   m_TagString: lastPieceOfGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1331,7 +1331,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 951ed7cdc77560b4dab822d0a96ad037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eatedFood: 0
 --- !u!1 &257653036
 GameObject:
   m_ObjectHideFlags: 0
@@ -4225,7 +4224,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zOffeset: -10
-  yOffeset: 0.02
+  yOffeset: 0.6
+  xOffeset: 0
   smooth: -10
 --- !u!1 &746086549
 GameObject:
@@ -8300,7 +8300,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333675198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.8379, y: -2.0991, z: 0}
+  m_LocalPosition: {x: -4, y: -1.6, z: 0}
   m_LocalScale: {x: 1.1501273, y: 1.1113354, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12151,6 +12151,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1241536047571513703, guid: 4cd99cd145ad00240ba2f9bebff20a92, type: 3}
+      propertyPath: m_Name
+      value: lastPieceOfGround
+      objectReference: {fileID: 0}
     - target: {fileID: 1241536047620270512, guid: 4cd99cd145ad00240ba2f9bebff20a92, type: 3}
       propertyPath: m_Name
       value: terreno
