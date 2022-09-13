@@ -29,4 +29,16 @@ public class ScenaManager : MonoBehaviour
     public void Indietro(){
         SceneManager.LoadScene("scenaHome");
     }
+
+    public void Livello1(){
+        SceneManager.LoadScene("livello1");
+    }
+
+    public void Livello2(){
+        SceneManager.LoadScene("livello2");
+    }
+
+    public void Livello3(){
+        SceneManager.LoadScene("livello3");
+    }
 }
