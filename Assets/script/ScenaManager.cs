@@ -26,5 +26,7 @@ public class ScenaManager : MonoBehaviour
         SceneManager.LoadScene("scenaLivelli");
     }
 
-
+    public void Indietro(){
+        SceneManager.LoadScene("scenaHome");
+    }
 }

@@ -12,7 +12,7 @@ public class MenuPausa : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.Escape)){
+        if (Input.GetKey(KeyCode.Mouse0)){
 
             if (GiocoInPausa)
             {
@@ -25,14 +25,14 @@ public class MenuPausa : MonoBehaviour
         }
     }
 
-    void Riprendi()
+    public void Riprendi()
     {
         menuPausaUI.SetActive(false);
         Time.timeScale=1f;
         GiocoInPausa=false;
-    }
+    } 
 
-    void Pausa()
+     public void Pausa()
     {
         menuPausaUI.SetActive(true);
         Time.timeScale = 0f;
