@@ -29,5 +29,12 @@ public class PlayerCollisonController : MonoBehaviour
             
         }
 
+        if(other.gameObject.tag == "cibo"){
+
+            Debug.Log("you aet a good food");
+            EatedFood++;
+            
+        }
+
     }
 }

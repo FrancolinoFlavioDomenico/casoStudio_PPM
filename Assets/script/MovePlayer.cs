@@ -101,6 +101,6 @@ public class MovePlayer : MonoBehaviour
     }
 
     void gameOver(){
-        //code for game over...
+        Debug.Log("Game over");
     }
 }
