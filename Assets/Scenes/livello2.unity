@@ -4895,7 +4895,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797381661}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 65.1, y: -0.3, z: 0}
+  m_LocalPosition: {x: -9.1, y: -2.27, z: 0}
   m_LocalScale: {x: 1.1501273, y: 1.1113354, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5574,7 +5574,7 @@ GameObject:
   - component: {fileID: 968022930}
   - component: {fileID: 968022929}
   m_Layer: 0
-  m_Name: apple
+  m_Name: cavolo
   m_TagString: goodFood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5588,7 +5588,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968022927}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.017613, y: -6.505533, z: 0.08453139}
+  m_LocalPosition: {x: -15.77, y: -6.505533, z: 0.08453139}
   m_LocalScale: {x: 2.3401997, y: 2.3764, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5674,7 +5674,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 104f4641bec73964d8027b6e6db040ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3f66a63c9aa2f3e459b5d4a348fbce11, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6962,8 +6962,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184444328}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.5811844, y: -5.402533, z: 0.08453139}
-  m_LocalScale: {x: 2.4652998, y: 2.0465536, z: 1}
+  m_LocalPosition: {x: 7.87, y: -5.3959, z: 0.08453139}
+  m_LocalScale: {x: 1.9182498, y: 1.1945734, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 857093208}
@@ -6998,7 +6998,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 0.38, y: 0.61}
     newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -7048,7 +7048,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 10b3e5b0ac63ccf418d063d29ec497ee, type: 3}
+  m_Sprite: {fileID: 374816159, guid: 514037cf518b9074e9da4560d3b77de7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8532,7 +8532,7 @@ GameObject:
   - component: {fileID: 1411769974}
   - component: {fileID: 1411769973}
   m_Layer: 0
-  m_Name: zucchini
+  m_Name: peperone
   m_TagString: goodFood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8632,7 +8632,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3c6993c1c5160744b85d3e35e672c153, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 340b0ed97800e4d408753bb4b57fe00c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8861,7 +8861,7 @@ GameObject:
   - component: {fileID: 1456956856}
   - component: {fileID: 1456956855}
   m_Layer: 0
-  m_Name: pie
+  m_Name: pizza
   m_TagString: badFood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8961,7 +8961,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f2c704c593143d44b8fdc3954a724530, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2b83e4afee7fd8d47946338ae7f2885a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10781,7 +10781,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.67, y: 0.35}
+    oldSize: {x: 0.5, y: 0.31}
     newSize: {x: 0.67, y: 0.35}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -10831,7 +10831,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1035143907, guid: 514037cf518b9074e9da4560d3b77de7, type: 3}
+  m_Sprite: {fileID: 728120547, guid: 514037cf518b9074e9da4560d3b77de7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11245,7 +11245,7 @@ GameObject:
   - component: {fileID: 1929362425}
   - component: {fileID: 1929362424}
   m_Layer: 0
-  m_Name: ice_cream_bar_02
+  m_Name: wine
   m_TagString: badFood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11295,7 +11295,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 0.33, y: 0.56}
     newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -11345,7 +11345,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e3bb41e41af06b045905c19f1f1208b7, type: 3}
+  m_Sprite: {fileID: -1659720798, guid: 514037cf518b9074e9da4560d3b77de7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
