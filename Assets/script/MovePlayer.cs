@@ -20,6 +20,9 @@ public class MovePlayer : MonoBehaviour
     [SerializeField]//per poter cambiare jumpForce da unity ispector
     float jumpForce = 100000f;
 
+    [SerializeField]
+    float FallingThreshold = -3f;
+
     void Start()
     {
         player = GetComponent<Rigidbody2D>();
@@ -32,7 +35,7 @@ public class MovePlayer : MonoBehaviour
         movePlayer();
         playerJump();
         
-        if(player.position.y == -10){
+        if(player.velocity.y < FallingThreshold){
             gameOver();
         }
     }
