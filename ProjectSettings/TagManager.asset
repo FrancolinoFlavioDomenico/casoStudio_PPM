@@ -13,6 +13,7 @@ TagManager:
   - cibo
   - level1
   - level2
+  - healthBar
   layers:
   - Default
   - TransparentFX

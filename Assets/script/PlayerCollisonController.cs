@@ -9,15 +9,14 @@ public class PlayerCollisonController : MonoBehaviour
    
 
     /**
-    * funzione che individua una singola collisione fra due gameobject con du collider
+    * funzione che individua una singola collisione fra due gameobject con due collider
     **/
     void OnCollisionEnter2D(Collision2D other)
     {
 
         if(other.gameObject.tag == "badFood"){
 
-            Debug.Log("you aet a bad food");
-            EatedFood++;
+            eatedBadFood();
 
            
         }
@@ -36,5 +35,16 @@ public class PlayerCollisonController : MonoBehaviour
             
         }
 
+    }
+
+    void eatedBadFood(){
+
+        GameObject healthBar = GameObject.FindGameObjectWithTag("healthBar");
+        Animator healthBarAnimator =  healthBar.GetComponent<Animator>();
+        healthBarAnimator.SetInteger("lifeCounter", healthBarAnimator.GetInteger("lifeCounter") - 1);
+    }
+
+    void eatedGoodFood(){
+        
     }
 }
