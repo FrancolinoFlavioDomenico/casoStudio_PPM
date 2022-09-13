@@ -4762,7 +4762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eatedFood: 0
-  foodToEat: 0
+  foodToEat: 6
 --- !u!58 &797381663
 CircleCollider2D:
   m_ObjectHideFlags: 0

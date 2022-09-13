@@ -12,7 +12,7 @@ public class MovePlayer : MonoBehaviour
     Animator animation;//varibile per gestire l'animazione del movimento del player
 
     [SerializeField]//per poter cambiare moveSpeed da unity ispector
-    float moveSpeed = 3f;
+    float moveSpeed = 5f;
 
     //variabili utili per gestire il salto del player
     bool playerCanJump = true;
@@ -21,7 +21,7 @@ public class MovePlayer : MonoBehaviour
     float jumpForce = 100000f;
 
     [SerializeField]
-    float FallingThreshold = -3f;
+    float FallingThreshold = -8f;
 
     void Start()
     {
@@ -94,17 +94,17 @@ public class MovePlayer : MonoBehaviour
     **/
     private void OnCollisionStay2D(Collision2D other)
     {
-        if(other.gameObject.tag == "ostacoli non bypassabili")//il player ha toccato il bordo del livello
+        if(other.gameObject.tag == "ostacoli non bypassabili" || other.gameObject.tag == "traguardo")//il player ha toccato il bordo del livello
             playerCanJump = false;
             
        
-       if(other.gameObject.tag != "ostacoli non bypassabili")//il player è potenzialmente sul terreno di gioco
+       if(other.gameObject.tag != "ostacoli non bypassabili" && other.gameObject.tag != "traguardo")//il player è potenzialmente sul terreno di gioco
             playerCanJump = true;
 
     }
 
     public void gameOver(){
-        
+
         Debug.Log("Game over");
     }
 }

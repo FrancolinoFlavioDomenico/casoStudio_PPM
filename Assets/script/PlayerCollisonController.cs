@@ -28,15 +28,15 @@ public class PlayerCollisonController : MonoBehaviour
         }
         
         if(other.gameObject.tag == "goodFood"){
-
            eatedGoodFood();
-            
         }
 
         if(other.gameObject.tag == "cibo"){
-
             eatedGoodFood();
-            
+        }
+
+        if(other.gameObject.tag == "traguardo"){
+            finishLevel();
         }
 
     }
@@ -57,5 +57,15 @@ public class PlayerCollisonController : MonoBehaviour
     void eatedGoodFood(){
         
         eatedFood++;
+    }
+
+    void finishLevel(){
+
+        if(eatedFood == foodToEat){
+            //code for winn
+        } else if(eatedFood < foodToEat){
+            MovePlayer movePlayerScript = player.GetComponent<MovePlayer>(); 
+            movePlayerScript.gameOver();
+        }
     }
 }
