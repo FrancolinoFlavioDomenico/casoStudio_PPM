@@ -5,7 +5,15 @@ using UnityEngine;
 public class PlayerCollisonController : MonoBehaviour
 {
 
-    public int EatedFood = 0;
+    public int eatedFood = 0;
+    public int foodToEat = 0;
+
+    GameObject player;
+
+    void Start()
+    {
+       player = GameObject.FindGameObjectWithTag("Player");
+    }
    
 
     /**
@@ -17,21 +25,17 @@ public class PlayerCollisonController : MonoBehaviour
         if(other.gameObject.tag == "badFood"){
 
             eatedBadFood();
-
-           
         }
         
         if(other.gameObject.tag == "goodFood"){
 
-            Debug.Log("you aet a good food");
-            EatedFood++;
+           eatedGoodFood();
             
         }
 
         if(other.gameObject.tag == "cibo"){
 
-            Debug.Log("you aet a good food");
-            EatedFood++;
+            eatedGoodFood();
             
         }
 
@@ -42,9 +46,16 @@ public class PlayerCollisonController : MonoBehaviour
         GameObject healthBar = GameObject.FindGameObjectWithTag("healthBar");
         Animator healthBarAnimator =  healthBar.GetComponent<Animator>();
         healthBarAnimator.SetInteger("lifeCounter", healthBarAnimator.GetInteger("lifeCounter") - 1);
+
+        if(healthBarAnimator.GetInteger("lifeCounter") == 0){
+
+            MovePlayer movePlayerScript = player.GetComponent<MovePlayer>(); 
+            movePlayerScript.gameOver();
+        }
     }
 
     void eatedGoodFood(){
         
+        eatedFood++;
     }
 }
