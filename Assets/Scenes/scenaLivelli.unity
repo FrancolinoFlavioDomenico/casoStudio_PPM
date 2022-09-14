@@ -707,8 +707,8 @@ RectTransform:
   m_Father: {fileID: 1990508077}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.277, y: 0.146}
-  m_AnchorMax: {x: 0.556, y: 0.395}
+  m_AnchorMin: {x: 0.277, y: 0.152}
+  m_AnchorMax: {x: 0.556, y: 0.369}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -58.319992, y: -58.320007}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -729,8 +729,8 @@ MonoBehaviour:
   _symmetricalYMode: 0
   _xAnchorMin: 0.277
   _xAnchorMax: 0.556
-  _yAnchorMin: 0.146
-  _yAnchorMax: 0.395
+  _yAnchorMin: 0.152
+  _yAnchorMax: 0.369
   _margin: 5.4
 --- !u!114 &445871674
 MonoBehaviour:
@@ -792,7 +792,7 @@ GameObject:
   - component: {fileID: 529812943}
   m_Layer: 5
   m_Name: btnLivello2
-  m_TagString: Untagged
+  m_TagString: btlLevel2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

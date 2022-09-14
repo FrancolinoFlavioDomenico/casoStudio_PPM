@@ -17,6 +17,9 @@ TagManager:
   - traguardo
   - levelFinishPanel
   - levelPassedCounter
+  - btnLevel1
+  - btlLevel2
+  - btnLevel3
   layers:
   - Default
   - TransparentFX
