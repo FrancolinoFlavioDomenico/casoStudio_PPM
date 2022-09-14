@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerCollisonController : MonoBehaviour
 {
 
-    public int eatedFood = 0;
+    int eatedFood = 0;
     public int foodToEat = 0;
 
     GameObject player;
