@@ -16,6 +16,7 @@ TagManager:
   - healthBar
   - traguardo
   - levelFinishPanel
+  - levelPassedCounter
   layers:
   - Default
   - TransparentFX

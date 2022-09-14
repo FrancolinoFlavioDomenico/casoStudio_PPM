@@ -10,11 +10,14 @@ public class PlayerCollisonController : MonoBehaviour
 
     GameObject player;
     public GameObject finishLevelPanel;
+    GameObject levelPassedCounterObject;
+    LevelPassedCounter levelPassedCounterScript;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        //finishLevelPanel = GameObject.Find("LivelloCompletato");
+        //levelPassedCounterObject = GameObject.FindGameObjectWithTag("levelPassedCounter");
+        //levelPassedCounterScript = levelPassedCounterObject.GetComponent<LevelPassedCounter>();
         finishLevelPanel.SetActive(false);
        
     }
@@ -67,9 +70,8 @@ public class PlayerCollisonController : MonoBehaviour
 
         if(eatedFood == foodToEat){
 
-//finishLevelPanel = GameObject.FindGameObjectsWithTag("levelFinishPanel")[0];
-finishLevelPanel.SetActive(true);
-            //finishLevelPanel.SetActive(true);
+            LevelPassedCounter.levelPassedCounter++;
+            finishLevelPanel.SetActive(true);
            
         } else if(eatedFood < foodToEat){
             MovePlayer movePlayerScript = player.GetComponent<MovePlayer>(); 
