@@ -7,6 +7,8 @@ public class ActivePanel1 : MonoBehaviour
 
     public GameObject Panel1;
     
+    public GameObject botton2;
+    public GameObject botton3;
 
 
    public void OpenPanel()
@@ -17,5 +19,9 @@ public class ActivePanel1 : MonoBehaviour
         Panel1.SetActive(true);
         
     }
+
+    botton2.SetActive(false);
+    botton3.SetActive(false);
+
    }
 }

@@ -945,6 +945,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel2: {fileID: 410687929}
+  botton1: {fileID: 0}
+  botton3: {fileID: 0}
 --- !u!1 &548506450
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,6 +1115,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel3: {fileID: 2133003955}
+  botton1: {fileID: 0}
+  botton2: {fileID: 0}
 --- !u!1 &589654329
 GameObject:
   m_ObjectHideFlags: 0
@@ -1736,6 +1740,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel3: {fileID: 2133003955}
+  botton1: {fileID: 1194720372}
+  botton2: {fileID: 529812937}
 --- !u!1 &861121514
 GameObject:
   m_ObjectHideFlags: 0
@@ -1904,6 +1910,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel2: {fileID: 410687929}
+  botton1: {fileID: 0}
+  botton3: {fileID: 0}
 --- !u!1 &874207304
 GameObject:
   m_ObjectHideFlags: 0
