@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 [RequireComponent (typeof(Rigidbody2D))]//forzo la classa ad aver associato un sprite con rigidbody2d
 
@@ -21,12 +22,17 @@ public class MovePlayer : MonoBehaviour
     float jumpForce = 100000f;
 
     [SerializeField]
-    float FallingThreshold = -8f;
+    float FallingThreshold = -20f;
+
+
+            GameObject gameOverPanel;
 
     void Start()
     {
         player = GetComponent<Rigidbody2D>();
         animation = GetComponent<Animator>(); 
+        gameOverPanel = GameObject.Find("gameOverPanel");
+                gameOverPanel.SetActive(false);
     }
 
 
@@ -105,6 +111,7 @@ public class MovePlayer : MonoBehaviour
 
     public void gameOver(){
 
-        Debug.Log("Game over");
+        gameOverPanel.SetActive(true);
+        player.constraints = RigidbodyConstraints2D.FreezePosition;
     }
 }
