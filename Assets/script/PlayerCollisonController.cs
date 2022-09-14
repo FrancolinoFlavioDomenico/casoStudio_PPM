@@ -9,10 +9,14 @@ public class PlayerCollisonController : MonoBehaviour
     public int foodToEat = 0;
 
     GameObject player;
+    public GameObject finishLevelPanel;
 
     void Start()
     {
-       player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
+        //finishLevelPanel = GameObject.Find("LivelloCompletato");
+        finishLevelPanel.SetActive(false);
+       
     }
    
 
@@ -62,7 +66,11 @@ public class PlayerCollisonController : MonoBehaviour
     void finishLevel(){
 
         if(eatedFood == foodToEat){
-            //code for winn
+
+//finishLevelPanel = GameObject.FindGameObjectsWithTag("levelFinishPanel")[0];
+finishLevelPanel.SetActive(true);
+            //finishLevelPanel.SetActive(true);
+           
         } else if(eatedFood < foodToEat){
             MovePlayer movePlayerScript = player.GetComponent<MovePlayer>(); 
             movePlayerScript.gameOver();

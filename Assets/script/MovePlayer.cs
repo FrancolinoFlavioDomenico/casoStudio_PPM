@@ -25,14 +25,14 @@ public class MovePlayer : MonoBehaviour
     float FallingThreshold = -20f;
 
 
-            GameObject gameOverPanel;
+    GameObject gameOverPanel;
 
     void Start()
     {
         player = GetComponent<Rigidbody2D>();
         animation = GetComponent<Animator>(); 
         gameOverPanel = GameObject.Find("gameOverPanel");
-                gameOverPanel.SetActive(false);
+        gameOverPanel.SetActive(false);
     }
 
 
